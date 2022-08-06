@@ -1,10 +1,14 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-
-import agent from '../agent';
-import { FOLLOW_USER, PROFILE_PAGE_LOADED, PROFILE_PAGE_UNLOADED, UNFOLLOW_USER } from '../constants/actionTypes';
-import ItemList from './ItemList';
+import ItemList from "./ItemList";
+import React from "react";
+import { Link } from "react-router-dom";
+import agent from "../agent";
+import { connect } from "react-redux";
+import {
+  FOLLOW_USER,
+  UNFOLLOW_USER,
+  PROFILE_PAGE_LOADED,
+  PROFILE_PAGE_UNLOADED,
+} from "../constants/actionTypes";
 
 const EditProfileSettings = (props) => {
   if (props.isUser) {
